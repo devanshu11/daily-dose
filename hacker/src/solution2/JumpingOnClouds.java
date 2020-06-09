@@ -10,15 +10,12 @@ public class JumpingOnClouds {
 	static int position = 0;
 	
     static int jumpingOnClouds(int[] c) {
-//    	List l1 = Arrays.asList(c);
     	if (position==c.length-1) return steps;
     	else if (c[position+2]!=1 ) {
     		position+=2;
     		steps+=1;
     		JumpingOnClouds.jumpingOnClouds(c);
     		return steps;
-    		
-
 		}    	
     	else if (c[position+1]!=1 ) {
     		position+=1;
