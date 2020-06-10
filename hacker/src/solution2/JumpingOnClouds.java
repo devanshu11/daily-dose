@@ -10,6 +10,7 @@ public class JumpingOnClouds {
 	static int position = 0;
 	
     static int jumpingOnClouds(int[] c) {
+
     	if (position==c.length-1) return steps;
     	else if (c[position+2]!=1 ) {
     		position+=2;
